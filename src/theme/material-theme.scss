@@ -1,0 +1,35 @@
+@import '~@angular/material/theming';
+@import './constants';
+@include mat-core();
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+
+// custom componentes, import, give to mixin and add to the bottom of the .theme
+@mixin custom-components-theme($theme) {
+  @include big-input-theme($theme);
+  @include flip-toggle-button-theme($theme);
+}
+// $primary-color-dark,
+// $primary-color,
+// $primary-color-light,
+// $primary-color-text,
+// $accent-color,
+// $primary-text-color,
+// $secondary-text-color,
+// $divider-color
+
+// Create the theme object (a Sass map containing all of the palettes).
+$app-theme: mat-light-theme(
+    $app-primary,
+    $app-accent,
+    $app-warn
+    );
+
+.sarah-will-always-theme {
+    @include angular-material-theme($app-theme);
+//   @include custom-components-theme($my-theme);
+    // font-family: $primary-font-family;
+    // color: $primary-color-text;
+
+}

@@ -1,0 +1,24 @@
+@import '~@angular/material/theming';
+
+$app-primary: mat-palette($mat-indigo, 300);
+$app-accent : mat-palette($mat-green, 500);
+$app-warn : mat-palette($mat-red);
+
+$primary-color-dark : #512DA8;
+$primary-color : #673AB7;
+$primary-color-light : #D1C4E9;
+$primary-color-text : #FFFFFF;
+$accent-color : #607D8B;
+$primary-text-color : #212121;
+$secondary-text-color: #757575;
+$divider-color : #BDBDBD;
+
+
+$dark-primary: mat-palette($mat-deep-purple);
+$dark-accent : mat-palette($mat-amber, A200, A100, A400);
+$dark-warn : mat-palette($mat-deep-orange);
+$dark-theme : mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
+
+//  font
+$primary-font-family: sans-serif;
